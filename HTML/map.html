@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZingSpeed | Toturial Train Map</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      />
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+          <nav class="menu">
+              <ul>
+                <li class="list active">
+                  <a href="#">
+                    <span class="icon">
+                      <img src="../IMAGE/home.png" alt="" style="width: 40px;">
+                    </span>
+                    <span class="text">Home</span>
+                  </a>
+                </li>
+                <li class="list">
+                  <a href="#">
+                    <span class="icon">
+                      <img src="../IMAGE/location.png" alt="" style="width: 40px;">
+                    </span>
+                    <span class="text">Map</span>
+                  </a>
+                </li>
+                <div class="indicator"></div>
+              </ul>
+          </nav>
+        </div>
+    </div>
+
+
+ 
+    <script>
+      const list = document.querySelectorAll('.list');
+      function activeLink(){
+        list.forEach((item) => 
+        item.classList.remove('active'));
+        this.classList.add('active');
+      }
+      list.forEach((item)=>
+      item.addEventListener('click', activeLink));
+    </script>
+
+    
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="../JS/app.js"></script>
+</body>
+</html>
